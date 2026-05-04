@@ -38,3 +38,4 @@ if (isset($_POST['meter'])) {
 
     echo "<p>$meter meters = $cm centimeters</p>";
     echo "<p>$meter meters = $km kilometers</p>";
+}
