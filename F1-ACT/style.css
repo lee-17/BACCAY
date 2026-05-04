@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name h1 {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+.name p {
+  margin: 5px 0;
+  color: gray;
+}
+.contact {
+  text-align: right;
+  font-size: 14px;
+}
+
+.section-title {
+  background: #eaeaea;
+  padding: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+/* PROFILE */
+.profile {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.job {
+  margin-top: 15px;
+}
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.job ul {
+  margin-top: 5px;
+}
+
+.education {
+  margin-top: 10px;
+}
+
+.skills {
+  display: flex;
+  gap: 40px;
+}
+.skills div {
+  width: 50%;
+}
+ul {
+  padding-left: 20px;
+}
