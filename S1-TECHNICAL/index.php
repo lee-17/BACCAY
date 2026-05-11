@@ -10,82 +10,194 @@
 
 <body>
 
-<div class="form-container">
-
-    <h2>Student Registration Form</h2>
-
-    <form method="POST">
-
-        <div class="form-group">
-            <label>First Name</label>
-            <input type="text" name="fname" placeholder="Enter first name" required>
-        </div>
-
-        <div class="form-group">
-            <label>Middle Name</label>
-            <input type="text" name="mname" placeholder="Enter middle name">
-        </div>
-
-        <div class="form-group">
-            <label>Last Name</label>
-            <input type="text" name="lname" placeholder="Enter last name" required>
-        </div>
-
-        <div class="row">
-
-            <div class="form-group">
-                <label>Age</label>
-                <input type="number" name="age" placeholder="Enter age" required>
-            </div>
-
-            <div class="form-group">
-                <label>Gender</label>
-                <select name="gender">
-                    <option value="">Select Gender</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                </select>
-            </div>
-
-        </div>
-
-        <div class="form-group">
-            <label>Course</label>
-            <input type="text" name="course" placeholder="Enter course" required>
-        </div>
-
-        <button type="submit" name="submit" class="btn">
-            Register Student
-        </button>
-
-    </form>
-
 <?php
 
-if(isset($_POST['submit'])){
-
-    $fname = $_POST['fname'];
-    $mname = $_POST['mname'];
-    $lname = $_POST['lname'];
-    $age = $_POST['age'];
-    $gender = $_POST['gender'];
-    $course = $_POST['course'];
-
-    $fullname = strtoupper($fname . " " . $mname . " " . $lname);
-
-    echo "
-    <div class='output'>
-        <h3>Registered Student Information</h3>
-
-        <p><strong>Full Name:</strong> $fullname</p>
-        <p><strong>Age:</strong> " . number_format($age) . "</p>
-        <p><strong>Gender:</strong> " . ucfirst($gender) . "</p>
-        <p><strong>Course:</strong> " . strtoupper($course) . "</p>
-    </div>
-    ";
-}
+$student_no = "2024-0001";
+$last_name = "Baccay";
+$first_name = "Leanne";
+$middle_name = "Ebora";
+$dob = "2005-11-10";
+$birth_country = "Philippines";
 
 ?>
+
+<div class="form-container">
+
+    <h1>Student Registration Form</h1>
+
+    <form>
+
+        
+        <div class="section">
+
+            <div class="form-row">
+
+                <div class="form-group large">
+                    <label>For School Use - Permission to Register:</label>
+                    <input type="text">
+                </div>
+
+                <div class="form-group small">
+                    <label>Date:</label>
+                    <input type="text">
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Student Number:</label>
+                    <input type="text" value="<?php echo $student_no; ?>">
+                </div>
+
+                <div class="form-group">
+                    <label>Entry Date:</label>
+                    <input type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>Grade:</label>
+                    <input type="text">
+                </div>
+
+            </div>
+
+        </div>
+
+       
+        <div class="title-bar">
+            Student Information
+        </div>
+
+        <div class="section">
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" value="<?php echo $last_name; ?>">
+                </div>
+
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" value="<?php echo $first_name; ?>">
+                </div>
+
+                <div class="form-group">
+                    <label>Middle Name</label>
+                    <input type="text" value="<?php echo $middle_name; ?>">
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group small">
+                    <label>Gender</label>
+
+                    <div class="radio-group">
+                        <input type="radio" checked> Female
+                        <input type="radio"> Male
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="text" value="<?php echo $dob; ?>">
+                </div>
+
+            </div>
+
+        </div>
+
+        
+        <div class="title-bar">
+            Previous School Information
+        </div>
+
+        <div class="section">
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Name of Previous School</label>
+                    <input type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>Grade at Previous School</label>
+                    <input type="text">
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Language of Instruction</label>
+
+                    <div class="radio-group">
+                        <input type="checkbox"> English
+                        <input type="checkbox"> Filipino
+                        <input type="checkbox"> Other
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+        <div class="title-bar">
+            Health Information
+        </div>
+
+        <div class="section">
+
+            <div class="form-group">
+                <label>Medical Conditions</label>
+                <textarea rows="4"></textarea>
+            </div>
+
+            <div class="radio-group">
+                <label>Does the student require an epi-pen?</label>
+
+                <input type="radio"> Yes
+                <input type="radio" checked> No
+            </div>
+
+        </div>
+
+        
+        <div class="title-bar">
+            Citizenship Information
+        </div>
+
+        <div class="section">
+
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>Birth Country</label>
+                    <input type="text" value="<?php echo $birth_country; ?>">
+                </div>
+
+                <div class="form-group">
+                    <label>Country of Citizenship</label>
+                    <input type="text">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="submit-area">
+            <button type="button">Submit Registration</button>
+        </div>
+
+    </form>
 
 </div>
 
