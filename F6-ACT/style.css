@@ -1,0 +1,103 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #FFF4CC;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 500px;
+    margin: 40px auto;
+    background: #FFFDF8;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align: center;
+    color: #8B5E3C;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #FFD166;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input:focus{
+    outline: none;
+    border-color: #FF914D;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background: #FF914D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #ff7a26;
+}
+
+.menu,
+.back{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu a,
+.back a{
+    background: #A8D5BA;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.menu a:hover,
+.back a:hover{
+    background: #8ec7a2;
+}
+
+table{
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th{
+    background: #FF914D;
+    color: white;
+    padding: 12px;
+}
+
+td{
+    padding: 10px;
+}
+
+th, td{
+    border: 1px solid #FFD166;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: #FFF8E7;
+}
+
+tr:hover{
+    background-color: #FFE4B5;
+}
