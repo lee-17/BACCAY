@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli("localhost", "root", "", "dogdb");
+$conn = new mysqli("localhost", "root", "", "fa6_baccay");
 
 if ($conn->connect_error) {
     die("Connection Failed: " . $conn->connect_error);
