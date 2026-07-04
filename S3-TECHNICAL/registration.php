@@ -51,7 +51,7 @@ if(isset($_POST['submit'])){
 
     <title>Registration Form</title>
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 

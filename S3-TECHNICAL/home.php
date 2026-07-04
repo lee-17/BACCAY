@@ -17,7 +17,7 @@ $username = $_SESSION['username'];
 
     <title>Home</title>
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
